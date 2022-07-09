@@ -18,9 +18,16 @@ public class PlayerCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag != "ground")
+        switch (collision.collider.tag)
         {
-            Debug.Log("yowza ya hit a wall");
-        }        
+            case "ground":
+                break;
+            case "boss":
+                Debug.Log("oh it's the boss!");
+                break;
+            default:
+                Debug.Log("yowza i think i hit a wall");
+                break;
+        }
     }
 }

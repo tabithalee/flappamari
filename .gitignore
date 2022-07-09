@@ -1,0 +1,5 @@
+# Ignore the Library folder to save space
+#===========================================
+Library/
+Logs/
+.vs/
