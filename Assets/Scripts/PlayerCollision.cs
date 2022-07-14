@@ -38,7 +38,7 @@ public class PlayerCollision : MonoBehaviour
         if (other.tag == "pivot")
         {
             Debug.Log("entered pivot zone");
-            other.GetComponent<CameraPivot>().PivotSphere();
+            StartCoroutine(other.GetComponent<CameraPivot>().PivotSphere());
         }
     }
 }
