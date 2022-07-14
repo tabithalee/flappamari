@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         transform.position = ball.position - offset;
-        Vector2 inputRaw = new Vector2(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"));
+        Vector2 inputRaw = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         Vector2 inputDir = inputRaw.normalized;
 
         Vector3 translation = Vector3.zero;
