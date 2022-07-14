@@ -1155,8 +1155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e73535eb83b52242a70cb405bbf9a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameCamera: {fileID: 963194225}
-  sphere: {fileID: 935276254}
+  ballParent: {fileID: 264721843}
   angle: 25
 --- !u!65 &1817735472
 BoxCollider:
