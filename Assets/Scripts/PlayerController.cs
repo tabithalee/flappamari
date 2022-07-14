@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour
     public Transform ball;
     private Vector3 offset;
 
+    public Rigidbody rb;
+    public float jumpMultiplier;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,5 +32,10 @@ public class PlayerController : MonoBehaviour
         Vector3 velocity = translation * speed;
 
         ball.Translate(velocity * Time.deltaTime, Space.World);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(transform.up * jumpMultiplier, ForceMode.Impulse);
+        }
     }
 }
